@@ -7,66 +7,85 @@
 </p>
 
 
-## Indroduction:-
+## Project Overview
 
-Businesses all over the world are growing every day. With the help of technology, they have access to a wider market and hence, a large customer base. Customer segmentation refers to categorizing customers into different groups with similar characteristics.
+Customer segmentation is one of the most effective ways for businesses to understand customer behavior and improve marketing strategies. Instead of treating every customer the same way, businesses can divide customers into different groups based on their purchasing patterns and spending habits.
 
-This project aims to identify major customer segments on a transnational data set for a UK-based online retail.
+In this project, I analyzed transaction data from a UK-based online retail company and used RFM (Recency, Frequency, Monetary) Analysis along with clustering techniques to identify meaningful customer segments.
 
-## Problem Description :
-In this project, your task is to identify major customer segments on a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. rfm_model
+## Problem Statement
 
-## The need of customer segmentation:
-The differences in customers' behaviour, demographics, geographies, etc. help in classifying them in groups. Learning about different groups in the customer can help with following:
+Businesses often have thousands of customers with different purchasing behaviors. Understanding which customers are more valuable and which customers require additional engagement can help improve customer retention and increase revenue.
 
-Target Marketing
+The main objective of this project is to analyze customer transaction data and segment customers based on their purchasing behavior using RFM Analysis and clustering techniques.
 
-Client understanding
+## Dataset Information
 
-Optimal product placement
+### Dataset Features
 
-Revenue growth
+| Feature | Description |
+|----------|-------------|
+| InvoiceNo | Unique invoice number |
+| StockCode | Product code |
+| Description | Product description |
+| Quantity | Quantity purchased |
+| InvoiceDate | Transaction date and time |
+| UnitPrice | Product price |
+| CustomerID | Unique customer identifier |
+| Country | Customer country |
 
-## Recency-Frequency-Monetary (RFM) model to determine customer value:
-The RFM model is quite useful model in retail customer segmentation where only the data of customer transaction is available. RFM stands for the three dimensions:
+### Dataset Summary
 
-Recency – How recently did the customer purchase?
+- Total Records: 541,909
+- Total Features: 8
+- Industry: Retail / E-Commerce
+- Project Type: Customer Segmentation
 
-Frequency – How often do they purchase?
+## Tools and Technologies Used
 
-Monetary Value – How much do they spend?
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Jupyter Notebook
+- GitHub
 
-A combination of these three attributes can be defined to assign a quantitative value to customers. e.g. A customer who recently bought high value products and transacts regularly is a high value customer.
+## Project Workflow
 
-## Approach taken
-Data inspection
+Data Understanding → Data Cleaning → EDA → Feature Engineering → RFM Analysis → Data Transformation → K-Means Clustering → Hierarchical Clustering → Customer Segmentation → Business Insights
 
-EDA 
+## Key Findings
 
-Data preparation
+- Majority of transactions were from the United Kingdom.
+- Customer purchases were highest during October, November, and December.
+- Most transactions occurred during afternoon hours.
+- Customer behavior was successfully segmented using RFM Analysis.
+- Two meaningful customer segments were identified.
 
-Create RFM model
+## Customer Segmentation Results
 
-Implementing various clustering Models and validating
+### Cluster 0 – Regular Customers
 
+- Lower purchase frequency
+- Lower overall spending
+- Less engagement
 
-## Conclusions:
-Descriptive Analysis:
-The data exploration of Online customer segmentation dataset shows :
+### Cluster 1 – Premium Customers
 
-Missing and duplicate values were found.
+- Higher spending
+- Higher purchase frequency
+- More engaged customers
 
-Most of the purchases are from the United Kingdom.
+## Conclusion
 
-Most of the customers have purchased items on Thursday, Wednesday, Tuesday.
+This project successfully analyzed customer transaction data and identified meaningful customer segments using RFM Analysis and clustering techniques.
 
-Most of the customers have purchased items in November, October, December, and the least number of purchases in April, January, February.
+Using K-Means Clustering, Hierarchical Clustering, Elbow Method, and Silhouette Analysis, customers were segmented into two groups based on purchasing behavior. These insights can help businesses improve customer retention, create targeted marketing campaigns, identify valuable customers, and make better business decisions.
 
-Most of the customers purchase in the afternoon time.
+## Author
 
-Using a recency, frequency and monetary(RFM) analysis, the customers have been segmented into various clusters.
+**Ravindra More**
 
-By applying different clustering algorithm to our dataset, we get the optimal number of cluster is equal to 3.
-
-The business can focus on these different clusters and provide customer with services of each sector in a different way, which would not only benefit the customers but also the business at large.
-
+Email: ravismore1998@gmail.com
